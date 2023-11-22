@@ -1,5 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Import of 'Quando' & 'Questrial' font */
+@import url("https://fonts.googleapis.com/css2?family=Quando&family=Questrial&display=swap");
+/*
+CSS rules to specify families
+font-family: 'Quando', serif;
+font-family: 'Questrial', sans-serif;
+*/
+
+.colorAccent {
+  color: #7f9fbe;
+}
+
 body {
   margin: 0;
   padding: 0;
+
+  color: #fff;
+  font-family: 'Questrial', sans-serif;
 }
