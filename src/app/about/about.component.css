@@ -128,7 +128,7 @@
   }
 
   .aboutContentDecoration {
-    margin: clamp(min(9.31px), 1.20vw, max(23.04px)) 0 clamp(min(12.42px), 1.60vw, max(30.72px));
+    margin: clamp(min(9.31px), 1.20vw, max(23.04px)) 0 clamp(min(12.42px), 1.60vw, max(30.72px)) clamp(min(23.28px), 3.00vw, max(57.60px));
   }
   .aboutContentDecoration-pair {
     margin: 0 clamp(min(27.94px), 3.60vw, max(69.12px));
