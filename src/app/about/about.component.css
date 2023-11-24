@@ -1,0 +1,160 @@
+.about {
+  width: 100%;
+
+  margin: auto;
+
+  background-color: #CBCBCB;
+}
+.aboutHelper {
+  padding-top: clamp(min(10.08px), 4.80vw, max(37.25px));
+}
+
+.aboutContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutContent-description{
+  text-align: center;
+}
+.aboutContentDecoration {
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+  z-index: 12;
+}
+.aboutContentDecoration-rectangle {
+  position: absolute;
+
+  display: flex;
+  align-self: center;
+
+  background-color: #B6B6B6;
+  z-index: -1;
+}
+.aboutContentDecoration-pair {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 0 clamp(min(7.56px), 3.60vw, max(27.94px));
+}
+
+.aboutContent-contact {
+  text-align: center;
+  padding: 0 clamp(min(21.00px), 10.00vw, max(77.60px));
+}
+
+@media screen and (max-width: 776px) {
+  .aboutHelper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutImg {
+    width: clamp(min(112.00px), 53.33vw, max(413.87px));
+    height: clamp(min(90.13px), 42.92vw, max(333.03px));
+  }
+
+  .aboutContent-title {
+    margin: 0;
+    margin-top: clamp(min(8.40px), 4.00vw, max(31.04px));
+
+    font-size: clamp(min(12px), 3.61vw, max(28.02px));
+  }
+  .aboutContent-description {
+    padding: 0 clamp(min(21.00px), 10.00vw, max(77.60px));
+    line-height: 1.1;
+    font-size: clamp(min(10.00px), 3.33vw, max(25.87px));
+  }
+  .aboutContentDecoration-rectangle {
+    width: clamp(min(143.00px), 60.00vw, max(465.60px));
+    height: clamp(min(24.50px), 11.67vw, max(90.53px));
+
+    /* margin-top: clamp(min(21.00px), 10.00vw, max(77.60px)); */
+    margin-left: clamp(min(21.00px), 10.00vw, max(77.60px));
+  }
+  .aboutContentDecoration-pairSvg {
+    width: clamp(min(10.02px), 4.77vw, max(37.01px));
+    height: clamp(min(9.68px), 4.61vw, max(35.78px));
+  }
+  .aboutContentDecoration-pairWord {
+    position: relative;
+    bottom: clamp(min(3.36px), 1.60vw, max(12.42px));
+
+    font-size: clamp(min(8px), 3.33vw, max(25.87px));
+    font-weight: normal;
+  }
+  .aboutContent-contact {
+    line-height: 1.1;
+    font-size: clamp(min(9.00px), 3.06vw, max(23.71px));
+  }
+}
+
+@media screen and (min-width: 777px) {
+  .aboutHelper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: clamp(min(37.25px), 4.80vw, max(92.16px));
+    padding-bottom: clamp(min(37.25px), 4.80vw, max(92.16px));
+  }
+
+  .aboutImg {
+    width: clamp(min(264.32px), 34.06vw, max(654.00px));
+    height: clamp(min(213.40px), 27.50vw, max(528.00px));
+  }
+
+  .aboutContent{
+    align-self: baseline;
+  }
+  .aboutContent-title {
+    margin: 0;
+
+    font-size: clamp(min(14.55px), 1.88vw, max(36.00px));
+  }
+  .aboutContent-description {
+    padding: 0 clamp(min(46.56px), 6.00vw, max(115.20px));
+
+    line-height: 1.1;
+    font-size: clamp(min(9.70px), 1.25vw, max(24.00px));
+  }
+
+  .aboutContentDecoration {
+    margin: clamp(min(9.31px), 1.20vw, max(23.04px)) 0 clamp(min(12.42px), 1.60vw, max(30.72px));
+  }
+  .aboutContentDecoration-pair {
+    margin: 0 clamp(min(27.94px), 3.60vw, max(69.12px));
+  }
+  .aboutContentDecoration-rectangle {
+    width: clamp(min(258.67px), 33.33vw, max(640.00px));
+    height: clamp(min(45.27px), 5.83vw, max(112.00px));
+
+    margin-top: clamp(min(15.52px), 2.00vw, max(38.40px));
+    margin-left: clamp(min(46.56px), 6.00vw, max(115.20px));
+  }
+  .aboutContentDecoration-pairSvg {
+    width: clamp(min(22.16px), 2.86vw, max(54.83px));
+    height: clamp(min(21.43px), 2.76vw, max(53.03px));
+  }
+  .aboutContentDecoration-pairWord {
+    position: relative;
+    bottom: clamp(min(1.55px), 0.20vw, max(3.84px));
+
+    font-size: clamp(min(10.51px), 1.35vw, max(26.00px));
+    font-weight: normal;
+  }
+  .aboutContent-contact {
+    position: relative;
+    top: clamp(min(7.76px), 1.00vw, max(19.20px));
+    line-height: 1.1;
+    font-size: clamp(min(9.70px), 1.25vw, max(24.00px));
+  }
+}

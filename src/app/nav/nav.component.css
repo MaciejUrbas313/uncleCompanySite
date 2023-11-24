@@ -1,5 +1,5 @@
 .nav {
-  width: 100vw;
+  width: 100%;
 
   background-color: #444645;
 }
@@ -13,11 +13,11 @@
 }
 
 .navCompanyMiddle-upperTitle {
-  margin: 0.1vw 0;
+  margin: clamp(min(0.78px), 0.10vw, max(1.92px)) 0;
   font-family: 'Quando', serif;
 }
 .navCompanyMiddle-lowerTitle {
-  margin: 0.2vw 0;
+  margin: clamp(min(1.55px), 0.20vw, max(3.84px)) 0;
   font-family: 'Quando', serif;
 }
 
@@ -77,13 +77,13 @@
     flex-direction: row;
     align-items: center;
 
-    margin-left: 2vw;
+    margin-left: clamp(min(15.52px), 2.00vw, max(38.40px));;
   }
   .navContact-pair {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.6vw;
+    gap: clamp(min(4.66px), 0.60vw, max(11.52px));
 
     margin: 0;
   }
@@ -109,11 +109,11 @@
     width: clamp(min(1.21px), 0.16vw, max(3.00px));
     height: clamp(min(15.36px), 1.98vw, max(38.00px));
 
-    margin: 0 0.6vw;
+    margin: 0 clamp(min(4.66px), 0.60vw, max(11.52px));;
   }
 
   .navCompanyMiddle {
-    margin-top: 0.4vw;
+    margin-top: clamp(min(3.10px), 0.40vw, max(7.68px));;
   }
   .navCompanyMiddle-logo {
     display: flex;
@@ -131,8 +131,7 @@
 
   .navCompanyMenu {
     position: absolute;
-    right: 32vw;
-    margin-left: 3vw;
+    margin-left: clamp(min(271.60px), 35.00vw, max(672.00px));
   }
   .navCompanyMenu-button {
     width: clamp(min(23.85px), 3.07vw, max(59.00px));

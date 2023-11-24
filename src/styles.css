@@ -13,8 +13,12 @@ font-family: 'Questrial', sans-serif;
 }
 
 body {
+  max-width: 1920px;
+
   margin: 0;
   padding: 0;
+
+  margin: auto;
 
   color: #fff;
   font-family: 'Questrial', sans-serif;
