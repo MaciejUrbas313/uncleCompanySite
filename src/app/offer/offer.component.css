@@ -2,11 +2,11 @@
   background-color: #B6B6B6;
 }
 
-.offer-tittle {
+.offer-title {
   text-align: center;
   margin-top: clamp(min(8.40px), 4.00vw, max(31.04px));
 }
-.offer-subtittleContainer {
+.offer-subtitleContainer {
   display: block;
   margin: auto;
 
@@ -14,7 +14,7 @@
 
   background-color: #AEAEAE;
 }
-.offer-subtittleContainer_lower {
+.offer-subtitleContainer_lower {
   font-family: 'Questrial', sans-serif;
   font-weight: 200;
 }
@@ -25,15 +25,15 @@
     border-top: solid clamp(min(1.17px), 0.56vw, max(4.31px)) #878787;
   }
 
-  .offer-subtittleContainer {
+  .offer-subtitleContainer {
     width: clamp(min(161.58px), 76.94vw, max(597.09px));
     height: clamp(min(25.08px), 11.94vw, max(92.69px));
   }
-  .offer-subtittleContainer_upper {
+  .offer-subtitleContainer_upper {
     position: relative;
     top: clamp(min(4.20px), 2.00vw, max(15.52px));
   }
-  .offer-subtittleContainer_lower {
+  .offer-subtitleContainer_lower {
     font-size: clamp(min(9.00px), 3.06vw, max(23.71px));
   }
 
@@ -63,6 +63,7 @@
     justify-content: center;
 
     margin-top: clamp(min(8.40px), 4.00vw, max(31.04px));
+    margin-bottom: clamp(min(8.40px), 4.00vw, max(31.04px));
   }
   .offer-examples_example {
     font-size: clamp(min(9.00px), 3.06vw, max(23.71px));
@@ -81,15 +82,15 @@
     border-top: solid clamp(min(2.02px), 0.26vw, max(5.00px))  #878787;;
   }
 
-  .offer-subtittleContainer {
+  .offer-subtitleContainer {
     width: clamp(min(485.81px), 62.60vw, max(1202.00px));
     height: clamp(min(58.20px), 7.50vw, max(144.00px));
   }
-  .offer-subtittleContainer_upper {
+  .offer-subtitleContainer_upper {
     position: relative;
     top: clamp(min(12.42px), 1.60vw, max(30.72px));
   }
-  .offer-subtittleContainer_lower {
+  .offer-subtitleContainer_lower {
     margin-top: clamp(min(17.07px), 2.20vw, max(42.24px));
     font-size: clamp(min(11.32px), 1.46vw, max(28.00px));
   }
@@ -122,6 +123,7 @@
     width: 50%;
 
     margin-top: clamp(min(23.28px), 3.00vw, max(57.60px));
+    margin-bottom: clamp(min(23.28px), 3.00vw, max(57.60px));
   }
   .offer-examples_example {
     font-size: clamp(min(14.55px), 1.88vw, max(36.00px));

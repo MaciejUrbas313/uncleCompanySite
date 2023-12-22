@@ -1,0 +1,218 @@
+.contact{
+  background-color: #6C6C70;
+}
+
+.contact-rectangle {
+  display: block;
+  background-color: #CBCBCB;
+}
+
+.contact-titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #B6B6B6;
+}
+
+.contact-helper_map {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-helper_data{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 776px) {
+  .contact-rectangle {
+    display: block;
+    width: 100%;
+    height: clamp(min(27.42px), 13.06vw, max(101.31px));
+    border-top: solid clamp(min(1.17px), 0.56vw, max(4.31px)) #878787;
+  }
+
+  .contact-titleContainer {
+    width: 100%;
+    height: clamp(min(33.25px), 15.83vw, max(122.87px));
+    padding-bottom: clamp(min(3.36px), 1.60vw, max(12.42px));
+  }
+  .contact-titleContainer_upper{
+    margin: 0;
+    margin-top: clamp(min(6.30px), 3.00vw, max(23.28px));
+  }
+  .contact-titleContainer_lower{
+    margin: 0;
+    margin-top: clamp(min(3.36px), 1.60vw, max(12.42px));
+  }
+
+  .contact-helper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-helper_mapResolution {
+    width: 100%;
+    height: clamp(min(99.17px), 47.22vw, max(366.44px));
+  }
+
+  .contact-helper_data-title {
+    margin-top: clamp(min(8.40px), 4.00vw, max(31.04px));
+    margin-bottom: clamp(min(3.36px), 1.60vw, max(12.42px));
+
+    font-size: clamp(min(14.00px), 3.89vw, max(30.18px));
+    font-weight: 200;
+  }
+  .contact-helper_data-pair {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: start;
+
+    gap: clamp(min(6.30px), 3.00vw, max(23.28px));
+    margin-left: clamp(min(12.60px), 6.00vw, max(46.56px));
+  }
+  .contact-helper_data-pair_locationSvg {
+    margin-left: clamp(min(4.67px), 2.22vw, max(17.24px));
+    width: clamp(min(8.16px), 3.89vw, max(30.18px));
+    height: clamp(min(9.92px), 4.72vw, max(36.64px));
+  }
+  .contact-helper_data-pair_phoneSvg {
+    margin-left: clamp(min(4.08px), 1.94vw, max(15.09px));
+    width: clamp(min(8.75px), 4.17vw, max(32.33px));
+    height: clamp(min(8.75px), 4.17vw, max(32.33px));
+  }
+  .contact-helper_data-pair_emailSvg {
+    width: clamp(min(12.83px), 6.11vw, max(47.42px));
+    height: clamp(min(8.75px), 4.17vw, max(32.33px));
+  }
+  .contact-helper_data-pair_text {
+    font-size: clamp(min(10.00px), 3.33vw, max(25.87px));
+  }
+
+  .contact-helper_data-logo {
+    text-align: center;
+
+    margin-top: clamp(min(4.20px), 2.00vw, max(15.52px));
+  }
+  .contact-helper_data-logo_svg {
+    width: clamp(min(39.67px), 18.89vw, max(146.58px));
+    height: clamp(min(18.17px), 8.65vw, max(67.12px));
+  }
+  .contact-helper_data-logo_upperTitle {
+    margin-top: clamp(min(1.26px), 0.60vw, max(4.66px));
+    margin-bottom: 0;
+
+    font-size: clamp(min(10.00px), 3.33vw, max(25.87px));
+    font-weight: 200;
+  }
+  .contact-helper_data-logo_lowerTitle {
+    margin-top: 0.6vw;
+
+    font-size: clamp(min(10.00px), 3.33vw, max(25.87px));
+    font-weight: 200;
+  }
+}
+
+@media screen and (min-width: 777px) {
+  .contact-rectangle {
+    display: block;
+    width: 100%;
+    height: clamp(min(30.31px), 3.91vw, max(75.00px));
+    border-top: solid clamp(min(2.02px), 0.26vw, max(5.00px)) #878787;
+  }
+
+  .contact-titleContainer {
+    width: 100%;
+    height: clamp(min(72.35px), 9.32vw, max(179.00px));
+    padding-bottom: clamp(min(12.42px), 1.60vw, max(30.72px));
+  }
+  .contact-titleContainer_upper{
+    margin: 0;
+    margin-top: clamp(min(15.52px), 2.00vw, max(38.40px));
+  }
+  .contact-titleContainer_lower{
+    margin: 0;
+    margin-top: clamp(min(4.66px), 0.60vw, max(11.52px));
+  }
+
+  .contact-helper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-helper_mapResolution {
+    width: clamp(min(474.49px), 61.15vw, max(1174.00px));
+    height: clamp(min(357.28px), 46.04vw, max(884.00px));
+  }
+
+  .contact-helper_data-title {
+    margin-top: clamp(min(9.31px), 1.20vw, max(23.04px));
+    margin-bottom: clamp(min(3.36px), 1.60vw, max(12.42px));
+
+    font-size: clamp(min(16.17px), 2.08vw, max(40.00px));
+    font-weight: 200;
+  }
+  .contact-helper_data-pair {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: start;
+
+    gap: clamp(min(15.52px), 2.00vw, max(38.40px));
+
+    margin-top: clamp(min(15.52px), 2.00vw, max(38.40px));
+    margin-left: clamp(min(23.28px), 3.00vw, max(57.60px));
+  }
+  .contact-helper_data-pair_locationSvg {
+    margin-left: clamp(min(9.82px), 1.27vw, max(24.29px));
+    width: clamp(min(20.09px), 2.59vw, max(49.71px));
+    height: clamp(min(23.44px), 3.02vw, max(58.00px));
+  }
+  .contact-helper_data-pair_phoneSvg {
+    margin-left: clamp(min(6.87px), 0.89vw, max(17.00px));
+    width: clamp(min(23.04px), 2.97vw, max(57.00px));
+    height: clamp(min(23.04px), 2.97vw, max(57.00px));
+  }
+  .contact-helper_data-pair_emailSvg {
+    width: clamp(min(29.91px), 3.85vw, max(74.00px));
+    height: clamp(min(19.80px), 2.55vw, max(49.00px));
+  }
+  .contact-helper_data-pair_text {
+    font-size: clamp(min(14.55px), 1.88vw, max(36.00px));
+  }
+
+  .contact-helper_data-logo {
+    text-align: center;
+
+    margin-top: clamp(min(23.28px), 3.00vw, max(57.60px));
+  }
+  .contact-helper_data-logo_svg {
+    width: clamp(min(63.49px), 8.18vw, max(157.09px));
+    height: clamp(min(29.08px), 3.75vw, max(71.94px));
+  }
+  .contact-helper_data-logo_upperTitle {
+    margin-top: clamp(min(4.66px), 0.60vw, max(11.52px));
+    margin-bottom: 0;
+
+    font-family: 'Quando', serif;
+    font-size: clamp(min(13.74px), 1.77vw, max(34.00px));
+    font-weight: 200;
+  }
+  .contact-helper_data-logo_lowerTitle {
+    margin-top: clamp(min(4.66px), 0.60vw, max(11.52px));
+
+    font-family: 'Quando', serif;
+    font-size: clamp(min(9.70px), 1.25vw, max(24.00px));
+    font-weight: 200;
+  }
+}

@@ -5,6 +5,7 @@ import { RouterOutlet } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { NavComponent } from "./nav/nav.component";
 import { OfferComponent } from './offer/offer.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 // import function to register Swiper custom elements
@@ -23,7 +24,8 @@ register();
       RouterOutlet,
       AboutComponent,
       NavComponent,
-      OfferComponent
+      OfferComponent,
+      ContactComponent
     ],
 })
 export class AppComponent {
