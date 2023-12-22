@@ -12,6 +12,15 @@ font-family: 'Questrial', sans-serif;
   color: #7f9fbe;
 }
 
+.app-hPower {
+  font-family: 'Questrial', sans-serif;
+  font-weight: 200;
+}
+.app-hSub {
+  font-family: 'Questrial', sans-serif;
+  font-weight: 200;
+}
+
 body {
   max-width: 1920px;
 
@@ -22,4 +31,22 @@ body {
 
   color: #fff;
   font-family: 'Questrial', sans-serif;
+}
+
+@media screen and (max-width: 776px) {
+  .app-hPower {
+    font-size: clamp(min(14.00px), 3.89vw, max(30.18px));
+  }
+  .app-hSub {
+    font-size: clamp(min(10.00px), 3.33vw, max(25.87px));
+  }
+}
+
+@media screen and (min-width: 777px) {
+  .app-hPower {
+    font-size: clamp(min(25.87px), 3.33vw, max(64.00px));
+  }
+  .app-hSub {
+    font-size: clamp(min(14.55px), 1.88vw, max(36.00px));
+  }
 }

@@ -1,3 +1,137 @@
-swiper-slide{
-  color: aquamarine;
+.offer {
+  background-color: #B6B6B6;
+}
+
+.offer-tittle {
+  text-align: center;
+  margin-top: clamp(min(8.40px), 4.00vw, max(31.04px));
+}
+.offer-subtittleContainer {
+  display: block;
+  margin: auto;
+
+  text-align: center;
+
+  background-color: #AEAEAE;
+}
+.offer-subtittleContainer_lower {
+  font-family: 'Questrial', sans-serif;
+  font-weight: 200;
+}
+
+
+@media screen and (max-width: 776px) {
+  .offer {
+    border-top: solid clamp(min(1.17px), 0.56vw, max(4.31px)) #878787;
+  }
+
+  .offer-subtittleContainer {
+    width: clamp(min(161.58px), 76.94vw, max(597.09px));
+    height: clamp(min(25.08px), 11.94vw, max(92.69px));
+  }
+  .offer-subtittleContainer_upper {
+    position: relative;
+    top: clamp(min(4.20px), 2.00vw, max(15.52px));
+  }
+  .offer-subtittleContainer_lower {
+    font-size: clamp(min(9.00px), 3.06vw, max(23.71px));
+  }
+
+  .offer-helper {
+    display: flex;
+    flex-direction: column;
+  }
+  .offerSwiperContainer {
+    width: 100%;
+    height: 100%;
+    margin-top: clamp(min(8.40px), 4.00vw, max(31.04px));
+  }
+  .offerSwiperSlide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiperSlideImg {
+    width: clamp(min(112.00px), 53.33vw, max(413.87px));
+    height: clamp(min(90.13px), 42.92vw, max(333.03px));
+  }
+
+  .offer-examples {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: clamp(min(8.40px), 4.00vw, max(31.04px));
+  }
+  .offer-examples_example {
+    font-size: clamp(min(9.00px), 3.06vw, max(23.71px));
+
+    margin: 0;
+    margin-bottom: clamp(min(6.30px), 3.00vw, max(23.28px));
+    margin-left: clamp(min(12.60px), 6.00vw, max(46.56px));
+  }
+  span {
+    margin-right: clamp(min(4.20px), 2.00vw, max(15.52px));
+  }
+}
+
+@media screen and (min-width: 777px) {
+  .offer {
+    border-top: solid clamp(min(2.02px), 0.26vw, max(5.00px))  #878787;;
+  }
+
+  .offer-subtittleContainer {
+    width: clamp(min(485.81px), 62.60vw, max(1202.00px));
+    height: clamp(min(58.20px), 7.50vw, max(144.00px));
+  }
+  .offer-subtittleContainer_upper {
+    position: relative;
+    top: clamp(min(12.42px), 1.60vw, max(30.72px));
+  }
+  .offer-subtittleContainer_lower {
+    margin-top: clamp(min(17.07px), 2.20vw, max(42.24px));
+    font-size: clamp(min(11.32px), 1.46vw, max(28.00px));
+  }
+
+  .offer-helper {
+    display: flex;
+    flex-direction: row;
+  }
+  .offerSwiperContainer {
+    width: 50%;
+    height: 100%;
+    margin-left: 0;
+    margin-top: clamp(min(23.28px), 3.00vw, max(57.60px));
+  }
+  .offerSwiperSlide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiperSlideImg {
+    width: clamp(min(334.65px), 43.13vw, max(828.00px));
+    height: clamp(min(250.58px), 32.29vw, max(620.00px));
+  }
+
+  .offer-examples {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+
+    margin-top: clamp(min(23.28px), 3.00vw, max(57.60px));
+  }
+  .offer-examples_example {
+    font-size: clamp(min(14.55px), 1.88vw, max(36.00px));
+    margin: 0;
+    margin-bottom: clamp(min(13.35px), 1.72vw, max(33.02px));
+    margin-left: clamp(min(23.28px), 3.00vw, max(57.60px));
+
+    line-height: 1.2;
+  }
+  span {
+    margin-right: clamp(min(4.20px), 2.00vw, max(15.52px));
+  }
 }
