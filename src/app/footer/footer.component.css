@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #969495;
+  text-align: center;
+}
+
+@media screen and (max-width: 776px) {
+  .footer {
+    height: clamp(min(16.33px), 7.78vw, max(60.36px));
+  }
+  .footerSignature{
+    font-size: clamp(min(10.00px), 3.33vw, max(25.87px));
+  }
+}
+
+@media screen and (min-width: 777px) {
+  .footer {
+    height: clamp(min(19.80px), 2.55vw, max(49.00px));
+  }
+  .footerSignature{
+    font-size: clamp(min(4.67px), 2.22vw, max(17.24px));
+  }
+}

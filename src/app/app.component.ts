@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { NavComponent } from "./nav/nav.component";
 import { OfferComponent } from './offer/offer.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 // import function to register Swiper custom elements
@@ -25,7 +26,8 @@ register();
       AboutComponent,
       NavComponent,
       OfferComponent,
-      ContactComponent
+      ContactComponent,
+      FooterComponent
     ],
 })
 export class AppComponent {
