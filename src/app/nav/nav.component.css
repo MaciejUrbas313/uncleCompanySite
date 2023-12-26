@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 776px) {
   .nav {
-    height: clamp(min(51.33px), 24.44vw, max(189.69px));
+    height: clamp(min(58px), 24.44vw, max(189.65px));
   }
 
   .navContact {
@@ -31,7 +31,8 @@
   }
 
   .navCompanyMiddle {
-    margin-top: 2vw;
+    position: absolute;
+    top: clamp(min(6.72px), 3.20vw, max(24.83px));
   }
   .navCompanyMiddle-logo {
     display: flex;
@@ -48,22 +49,154 @@
   }
 
   .navCompanyMenu {
-    position: absolute;
-    right: 10vw;
-    margin-top: 2.6vw;
+    height: clamp(min(51.33px), 24.44vw, max(189.69px));
+
+    display: flex;
+    align-items: center;
   }
   .navCompanyMenu-button {
-    width: clamp(min(20.7px), 4.44vw, max(34.49px));
-    height: clamp(min(15.5px), 3.33vw, max(25.87px));
+    width: clamp(min(18px), 4.44vw, max(34.49px));
+    height: clamp(min(18px), 4.44vw, max(34.49px));
 
-    background-color: #444645;
-    background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='1.25' x2='16' y2='1.25' stroke='%2380A3C3' stroke-width='1.5'/%3E%3Cline y1='6.25' x2='16' y2='6.25' stroke='%2380A3C3' stroke-width='1.5'/%3E%3Cline y1='11.25' x2='16' y2='11.25' stroke='%2380A3C3' stroke-width='1.5'/%3E%3C/svg%3E%0A");
-    background-size: contain;
+    position: fixed;
+    left: clamp(min(189.00px), 90.00vw, max(698.40px));
+
+    background-color: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='1.25' x2='16' y2='1.25' stroke='%23398EE0' stroke-width='1.5'/%3E%3Cline y1='6.25' x2='16' y2='6.25' stroke='%23398EE0' stroke-width='1.5'/%3E%3Cline y1='11.25' x2='16' y2='11.25' stroke='%23398EE0' stroke-width='1.5'/%3E%3C/svg%3E%0A");
+    background-size: cover;
     border: none;
+
+    z-index: 53;
+
+    transition: all 0.3s ease;
+    transition: transform 0.3s
   }
+  .navCompanyMenu-button-active {
+    width: clamp(min(24px), 5.83vw, max(45.24px));
+    height: clamp(min(24px), 5.83vw, max(45.24px));
+
+    background-color: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg width='29' height='30' viewBox='0 0 29 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='6.97053' y1='8.02922' x2='21.1127' y2='22.1714' stroke='%23398EE0' stroke-width='2'/%3E%3Cline x1='6.99992' y1='21.9999' x2='21.1421' y2='7.85779' stroke='%23398EE0' stroke-width='2'/%3E%3C/svg%3E%0A");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+
+    transform: rotate(90deg);
+  }
+
   .navCompanyMenu-elements {
-    display: none;
-    /* visibility: hidden; */
+    width: 100vw;
+    height: 100vh;
+    background-color: #444645;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateX(-100%);
+
+    z-index: 14;
+  }
+  .navCompanyMenu-elements-active {
+    transition: opacity 0.8s, transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateX(0);
+  }
+
+  .navCompanyMenu-elementsText{
+    background-color: inherit;
+    border: none;
+    color: #fff;
+  }
+  .navCompanyMenu-elementsText {
+    width: clamp(min(84.00px), 40.00vw, max(310.40px));
+    height: clamp(min(54.60px), 26.00vw, max(201.76px));
+    margin: auto;
+
+    background-color: #398EE0;
+    border: none;
+    border-radius: clamp(min(4.20px), 2.00vw, max(15.52px));
+
+    font-size: clamp(min(11.68px), 5.56vw, max(43.15px));
+    font-weight: 600;
+
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+
+  }
+  .navCompanyMenu-elementsText::after {
+    content: "";
+    width: 0px;
+    height: clamp(min(2.33px), 1.11vw, max(8.62px));
+    border-radius: clamp(min(1.17px), 0.56vw, max(4.31px));
+    margin: auto;
+    display: block;
+    color: white;
+    background-color: white;
+
+    transition: 400ms;
+  }
+  .navCompanyMenu-elementsText:hover {
+    background-color: #143d55;
+    border: 0px;
+  }
+  .navCompanyMenu-elementsText:hover::after {
+    margin: auto;
+    width: 68%;
+  }
+
+  a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+  }
+  a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: clamp(min(2.92px), 1.39vw, max(10.78px));
+    background-color: aqua;
+
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  .navScrollToTop {
+    width: clamp(min(16px), 5.83vw, max(45.24px));
+    height: clamp(min(16px), 5.83vw, max(45.24px));
+
+    position: fixed;
+    left: clamp(min(189.00px), 90.00vw, max(698.40px));
+    bottom: clamp(min(4.20px), 2.00vw, max(15.52px));
+
+    background-color: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='7.70711' y1='1.7177' x2='14.8138' y2='8.82443' stroke='%23398EE0' stroke-width='2'/%3E%3Cline x1='1.29289' y1='8.7177' x2='8.71751' y2='1.29308' stroke='%23398EE0' stroke-width='2'/%3E%3C/svg%3E%0A");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+
+    z-index: 53;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: 0.4s;
+  }
+  .navScrollToTop-active {
+    opacity: 1;
+    pointer-events: all;
   }
 }
 
@@ -130,20 +263,155 @@
   }
 
   .navCompanyMenu {
-    position: absolute;
-    margin-left: clamp(min(271.60px), 35.00vw, max(672.00px));
+    height: clamp(min(89.32px), 11.51vw, max(221.00px));
+
+    display: flex;
+    align-items: center;
   }
   .navCompanyMenu-button {
     width: clamp(min(23.85px), 3.07vw, max(59.00px));
     height: clamp(min(15.76px), 2.03vw, max(39.00px));
 
-    background-color: #444645;
-    background-image: url("data:image/svg+xml,%3Csvg width='39' height='27' viewBox='0 0 39 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='1.5' x2='39' y2='1.5' stroke='%2380A3C3' stroke-width='3'/%3E%3Cline y1='13.5' x2='39' y2='13.5' stroke='%2380A3C3' stroke-width='3'/%3E%3Cline y1='25.5' x2='39' y2='25.5' stroke='%2380A3C3' stroke-width='3'/%3E%3C/svg%3E%0A");
+    position: fixed;
+    top: clamp(min(37.25px), 4.80vw, max(92.16px));
+    left: clamp(min(698.40px), 90.00vw, max(1728.00px));
+
+    background-color: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg width='39' height='27' viewBox='0 0 39 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='1.5' x2='39' y2='1.5' stroke='%23398EE0' stroke-width='3'/%3E%3Cline y1='13.5' x2='39' y2='13.5' stroke='%23398EE0' stroke-width='3'/%3E%3Cline y1='25.5' x2='39' y2='25.5' stroke='%23398EE0' stroke-width='3'/%3E%3C/svg%3E%0A");
     background-size: contain;
     border: none;
+
+    z-index: 53;
+
+    transition: all 0.3s ease;
+    transition: transform 0.3s
   }
+  .navCompanyMenu-button-active {
+    width: clamp(min(23.85px), 3.07vw, max(59.00px));
+    height: clamp(min(23.85px), 3.07vw, max(59.00px));
+
+    background-color: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg width='39' height='39' viewBox='0 0 39 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='18.5' x2='39' y2='18.5' stroke='%23398EE0' stroke-width='3'/%3E%3Cline x1='19.5' y1='39' x2='19.5' y2='6.55671e-08' stroke='%23398EE0' stroke-width='3'/%3E%3C/svg%3E%0A");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+
+    transform: rotate(135deg);
+  }
+
   .navCompanyMenu-elements {
-    display: none;
-    /* visibility: hidden; */
+    width: 100vw;
+    height: 100vh;
+    background-color: #444645;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateX(-100%);
+
+    z-index: 14;
+  }
+  .navCompanyMenu-elements-active {
+    transition: opacity 0.8s, transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateX(0);
+  }
+
+  .navCompanyMenu-elementsText{
+    background-color: inherit;
+    border: none;
+    color: #fff;
+  }
+  .navCompanyMenu-elementsText {
+    width: clamp(min(248.32px), 32.00vw, max(614.40px));
+    height: clamp(min(77.60px), 10.00vw, max(192.00px));
+    margin: auto;
+
+    background-color: #398EE0;
+    border: none;
+    border-radius: clamp(min(15.52px), 2.00vw, max(38.40px));
+
+    font-size: clamp(min(25.87px), 3.33vw, max(64.00px));
+    font-weight: 600;
+
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+
+  }
+  .navCompanyMenu-elementsText::after {
+    content: "";
+    width: 0px;
+    height: clamp(min(2.33px), 1.11vw, max(8.62px));
+    border-radius: clamp(min(1.17px), 0.56vw, max(4.31px));
+    margin: auto;
+    display: block;
+    color: white;
+    background-color: white;
+
+    transition: 400ms;
+  }
+  .navCompanyMenu-elementsText:hover {
+    background-color: #143d55;
+    border: 0px;
+  }
+  .navCompanyMenu-elementsText:hover::after {
+    margin: auto;
+    width: 68%;
+  }
+
+  a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+  }
+  a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: clamp(min(2.92px), 1.39vw, max(10.78px));
+    background-color: aqua;
+
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  .navScrollToTop {
+    width: clamp(min(23.85px), 3.07vw, max(59.00px));
+    height: clamp(min(23.85px), 3.07vw, max(59.00px));
+
+    position: fixed;
+    left: clamp(min(698.40px), 90.00vw, max(1728.00px));
+    bottom: clamp(min(15.52px), 2.00vw, max(38.40px));
+
+    background-color: inherit;
+    /* background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='7.70711' y1='1.7177' x2='14.8138' y2='8.82443' stroke='%2380A3C3' stroke-width='2'/%3E%3Cline x1='1.29289' y1='8.7177' x2='8.71751' y2='1.29308' stroke='%2380A3C3' stroke-width='2'/%3E%3C/svg%3E%0A"); */
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='7.35355' y1='0.646447' x2='14.4603' y2='7.75318' stroke='%23398EE0'/%3E%3Cline x1='0.646447' y1='8.07125' x2='8.07107' y2='0.64663' stroke='%23398EE0'/%3E%3C/svg%3E%0A");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+
+    z-index: 53;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: 0.4s;
+  }
+  .navScrollToTop-active {
+    opacity: 1;
+    pointer-events: all;
   }
 }
