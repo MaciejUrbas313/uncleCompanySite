@@ -1,10 +1,12 @@
 .contact{
+  width: 100%;
+
   background-color: #6C6C70;
 }
 
 .contact-rectangle {
-  display: block;
-  background-color: #CBCBCB;
+  display: none;
+  background-color: #6C6C70;
 }
 
 .contact-titleContainer {
@@ -13,7 +15,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: #B6B6B6;
+  background-color: #6C6C70;
 }
 
 .contact-helper_map {
@@ -31,10 +33,10 @@
 
 @media screen and (max-width: 776px) {
   .contact-rectangle {
-    display: block;
+    display: none;
     width: 100%;
-    height: clamp(min(27.42px), 13.06vw, max(101.31px));
-    border-top: solid clamp(min(1.17px), 0.56vw, max(4.31px)) #878787;
+    /* height: clamp(min(27.42px), 13.06vw, max(101.31px)); */
+    border-top: solid clamp(min(1.17px), 0.56vw, max(4.31px)) #6C6C70;
   }
 
   .contact-titleContainer {
@@ -123,7 +125,7 @@
 
 @media screen and (min-width: 777px) {
   .contact-rectangle {
-    display: block;
+    display: none;
     width: 100%;
     height: clamp(min(30.31px), 3.91vw, max(75.00px));
     border-top: solid clamp(min(2.02px), 0.26vw, max(5.00px)) #878787;

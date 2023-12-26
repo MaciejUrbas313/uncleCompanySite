@@ -1,4 +1,6 @@
 .offer {
+  width: 100%;
+
   background-color: #B6B6B6;
 }
 
@@ -26,8 +28,8 @@
   }
 
   .offer-subtitleContainer {
-    width: clamp(min(161.58px), 76.94vw, max(597.09px));
-    height: clamp(min(25.08px), 11.94vw, max(92.69px));
+    width: clamp(min(184.7px), 76.94vw, max(597.09px));
+    height: clamp(min(32px), 11.94vw, max(92.69px));
   }
   .offer-subtitleContainer_upper {
     position: relative;
